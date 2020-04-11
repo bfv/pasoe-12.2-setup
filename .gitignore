@@ -1,0 +1,17 @@
+bin/
+common/
+hcapps/
+logs/
+openedge/
+temp/
+work/
+
+**/images/
+**/META-INF/
+
+**/adapters/rest/
+**/adapters/soap/
+**/backup/
+
+*.jsp
+*.war
