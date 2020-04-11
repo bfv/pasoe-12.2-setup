@@ -11,7 +11,7 @@ tcman.bat deploy -u bfv:bfv -v c:\dlc\122\servers\pasoe\extras\oehealth.war
 ```
 
 copied `bfvlib.pl` to `${CATALINA_BASE}/openedge` 
-see: https://github.com/bfv/bfvlib 
+see: https://github.com/bfv/bfvlib  
 at this point I ran a `git init`
 
 ## Turn off unnecessary protocols
@@ -45,7 +45,7 @@ http://localhost:8899/health?view=config (returns JSON)
 
 ## Add library and handler to application
 
-First the PROPATH of the `AppServer.Agent.as-test01` section is updated with the `${CATALINA_BASE}/ablapps/as-test01/openedge/bfvlib.pl` entry.
+First the PROPATH of the `AppServer.Agent.as-test01` section is updated with the  `${CATALINA_BASE}/ablapps/as-test01/openedge/bfvlib.pl` entry.
 
 Then add the webhandler:
 ```
