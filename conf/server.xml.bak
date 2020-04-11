@@ -343,10 +343,10 @@
         <Valve className="org.apache.catalina.valves.CrawlerSessionManagerValve" />
 <!-- feature:end:CrawlerSessionManager:on -->
 
-<!-- feature:begin:StuckSessionValve:on -->
+<!-- feature:begin:StuckSessionValve:off
         <Valve className="org.apache.catalina.valves.StuckThreadDetectionValve"
                threshold="${psc.as.stuckthreadthreshold}" />
-<!-- feature:end:StuckSessionValve:on -->
+     feature:end:StuckSessionValve:off -->
 
       </Host>
     </Engine>
