@@ -28,9 +28,6 @@ tcman.bat feature HealthCheck=on
 tcman config psc.as.health.enabled=true psc.as.health.enabled
 
 tcman.bat pasoestart -restart
-
-// check  the environment
-tcman.bat env
 ```
 
 As a consequence `conf/appserver.properties` and `conf/server.xml` are altered by the tools.
@@ -51,3 +48,10 @@ Then add the webhandler:
 ```
 oeprop.bat +as-test01.ROOT.WEB.handler1=bfvlib.pas.WebHandlerExt:/
 ```
+
+## Handy
+
+description | command
+:--- | :---
+restart instance: | `tcman.bat pasoestart -restart`
+check  the environment: | `tcman.bat env`
