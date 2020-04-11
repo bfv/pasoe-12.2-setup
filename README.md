@@ -16,7 +16,8 @@ at this point I ran a `git init`
 
 ## HealthCheck
 execute:
-```tcman.bat feature HealthCheck=on
+```
+tcman.bat feature HealthCheck=on 
 tcman config psc.as.health.enabled=true psc.as.health.enabled
 
 tcman.bat pasoestart -restart
@@ -27,9 +28,11 @@ tcman.bat env
 
 As a consequence `conf/appserver.properties` and `conf/server.xml` are altered by the tools.
 
+```
 http://localhost:8899/health (returns HTTP status code)
 http://localhost:8899/health?view=summary (returns JSON)
 http://localhost:8899/health?view=details (returns JSON)
 
 http://localhost:8899/health?view=config (returns JSON)
+```
 
